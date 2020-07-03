@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>var</title>
+  
+    <script>
+var one = "es una prueba";
+var two = "es otra prueba";
+var three = "prueba";
+
+//Cual variable está contenida en one?
+var opcion1 = one.indexOf(two);
+var opcion2 = one.indexOf(three);
+
+if(opcion1 >= 0){
+  console.log("two está contenida en one");
+}
+if(opcion2 >= 0){
+  console.log("three está contenida en one");
+}
+
+//Cual variable esta contenida en two?
+var opcion3 = two.indexOf(one);
+var opcion4 = two.indexOf(three);
+
+if(opcion3 >= 0){
+  console.log("one está contenida en two");
+}
+if(opcion4 >= 0){
+  console.log("three está contenida en two");
+}
+
+//Cual variable esta contenida en three?
+var opcion5 = three.indexOf(one);
+var opcion6 = three.indexOf(two);
+
+if(opcion5 >= 0){
+  console.log("one está contenida en three");
+}
+if(opcion6 >= 0){
+  console.log("two está contenida en three");
+}
+
+</script>
+  </body>
+</html>
